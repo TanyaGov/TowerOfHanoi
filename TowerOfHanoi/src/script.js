@@ -29,8 +29,8 @@ function resetTowers() {
 }
 
 function renderTowers(towers, numberOfDisks) {
-  const maxWidth = 175;
-  const minWidth = 30;
+  const maxWidth = 225;
+  const minWidth = 60;
   const diskHeight = 35;
   
   const diskColors = ['#FF68A8', '#64CFF7', '#F7E752', '#CA7CD8', '#50BCB9', '#81C953', '#ED7D51', '#A063C8', '#D84F74', '#44A9CC'];
@@ -45,9 +45,9 @@ function renderTowers(towers, numberOfDisks) {
       diskElement.style.width = `${diskWidth}px`;
 
       diskElement.style.backgroundColor = diskColors[disk - 1];
-
       diskElement.style.height = `${diskHeight}px`; 
-      towerElement.appendChild(diskElement);
+
+        towerElement.appendChild(diskElement);
     });
   });
 }
